@@ -12,9 +12,9 @@ pip install -r requirements.txt
 ## Usage
 ```bash
 
-python lazys3.py --help
+python s3enumerations.py --help
 
-usage: lazys3.py [-h] [-p PREFIXES] [-l LIMIT] [-u USER_AGENT] target
+usage: s3enumerations.py [-h] [-p PREFIXES] [-l LIMIT] [-u USER_AGENT] target
 
 Bruteforce AWS s3 buckets using different permutations
 

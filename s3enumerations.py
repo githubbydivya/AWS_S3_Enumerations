@@ -1,10 +1,13 @@
+# author:   @githubbydivya
+# date:     30/10/2022
+
 import asyncio
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 from functools import wraps
 from typing import Any
 
-from lazys3.scanner import Scanner
-from lazys3.utils import banner
+from s3enumerations.scanner import Scanner
+from s3enumerations.utils import banner
 from quart import Quart, render_template, websocket, request, flash, redirect, url_for
 import asyncio
 from concurrent.futures import ThreadPoolExecutor

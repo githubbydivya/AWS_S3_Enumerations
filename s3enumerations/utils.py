@@ -1,5 +1,5 @@
-# author:   @Daniel_Abeles
-# date:     26/06/18 
+# author:   @githubbydivya
+# date:     30/10/2022
 
 from blessings import Terminal
 import asyncio
@@ -9,17 +9,16 @@ t = Terminal()
 
 
 def banner():
-    daniel_abeles = t.cyan_bold("@Daniel_Abeles")
+    divya = t.cyan_bold("@githubbydivya")
 
     return f"""
-  _____       _                      _____ ____  
- |  __ \     | |                    / ____|___ \ 
- | |__) |   _| |     __ _ _____   _| (___   __) |
- |  ___/ | | | |    / _` |_  / | | |\___ \ |__ < 
- | |   | |_| | |___| (_| |/ /| |_| |____) |___) |
- |_|    \__, |______\__,_/___|\__, |_____/|____/ 
-         __/ |                 __/ |             
-        |___/ {daniel_abeles} |___/              
+  _____ ____  
+ / ____|___ \ 
+ | (___   __) |
+ ___ \ |__ < 
+ ____) |___) |
+ |_____/|____/           
+ |___/ {divya} |___/              
     """
 
 
