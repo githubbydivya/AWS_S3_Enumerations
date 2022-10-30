@@ -9,19 +9,6 @@ After cloning the repository and navigating to the created folder, simply run:
 pip install -r requirements.txt
 ```
 
-## Usage
-```bash
-
-python s3enumerations.py --help
-
-usage: s3enumerations.py [-h] [-p PREFIXES] [-l LIMIT] [-u USER_AGENT] target
-
-Bruteforce AWS s3 buckets using different permutations
-
-positional arguments:
-  target                which target to scan
-
-```
 ## To Run As Flask (Quart) Application on localhost:5000 follow below steps :-
 
 1. clone in the github repo in Pycharm and run s3enumerations.py file.
