@@ -1,7 +1,7 @@
 # AWS_S3_Enumerations
 
 ## About
-A Python port of the original [lazys3](https://github.com/nahamsec/lazyrecon) tool to enumerate AWS S3 buckets using different permutations, originally created by [@NahamSec](https://github.com/nahamsec). It utilizes the `asyncio` and `aiohttp` libraries to handle multiple high concurrency requests with great efficiency. 
+A Python Web based tool to enumerate AWS S3 buckets using different permutations
 
 ## Installation
 After cloning the repository and navigating to the created folder, simply run:
@@ -11,17 +11,8 @@ pip install -r requirements.txt
 
 ## Usage
 ```bash
-den1al@lab:~/Python/AWS_S3_Enumerations| ⟪🐍  lazys3-env⟫ master
-⇒  python lazys3.py --help
 
-  _____       _                      _____ ____
- |  __ \     | |                    / ____|___ \
- | |__) |   _| |     __ _ _____   _| (___   __) |
- |  ___/ | | | |    / _` |_  / | | |\___ \ |__ <
- | |   | |_| | |___| (_| |/ /| |_| |____) |___) |
- |_|    \__, |______\__,_/___|\__, |_____/|____/
-         __/ |                 __/ |
-        |___/ @Daniel_Abeles |___/
+python lazys3.py --help
 
 usage: lazys3.py [-h] [-p PREFIXES] [-l LIMIT] [-u USER_AGENT] target
 
@@ -42,12 +33,6 @@ optional arguments:
                         (default: aiohttp client 0.17)
 ```
 
-## Feature Requests
-Any feature requests are more then welcome, please create an issue containing all relevant information.
-
-## Credits
-* [@NahamSec](http://twitter.com/nahamsec)
-* [@JobertAbma](http://twitter.com/JobertAbma)
 
 
 
