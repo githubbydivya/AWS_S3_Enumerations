@@ -8,3 +8,8 @@ idna-ssl==1.1.0
 multidict==4.3.1
 six==1.11.0
 yarl==1.2.6
+Flask~=2.2.2
+aioflask~=0.4.0
+quart~=0.18.3
+pandas~=1.4.3
+plotly~=5.11.0

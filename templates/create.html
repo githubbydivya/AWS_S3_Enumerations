@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>S3 Enumerations</title>
+</head>
+<body>
+<h2>Create S3 Enumerations</h2>
+<form method="post">
+        <br>
+        <input type="text" name="s3bucketname"
+               placeholder="S3 Bucket Name For Enumeration"
+               value="{{ request.form['s3bucketname'] }}">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

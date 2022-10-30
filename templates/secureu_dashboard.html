@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function callback_dashboard(selection) {
+            $.getJSON({
+                url: "/callback", data: { 'data': selection }, success: function (result) {
+                    Plotly.newPlot('chart', result, {staticPlot: true});;
+                }
+            });
+        }
+    </script>
+</head>
+
+<body style="font-family:arial, sans-serif">
+    <h1 align="center">AWS S3 Bucket Enumerations</h1>
+    <h3 align="center">Click on any legend or in sets of The Status Code</h3>
+<!--    <input type="text" id="statuscode" name="statuscode" onchange="callback_dashboard(this.value)">-->
+    <div id="chart" class="chart"></div>
+</body>
+
+<script>
+    d = {{ graphJSON | safe }};
+    //d.config={staticPlot: true};
+    Plotly.newPlot('chart', d, {});
+
+</script>
+</html>

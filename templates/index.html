@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Running Quart App for S3 Enumerations</title>
+</head>
+<body>
+<h2>Running Quart App for S3 Enumerations</h2>
+<table>
+    <tr>
+        <th>S3BucketName</th>
+        <th>Status</th>
+    </tr>
+    <tbody>
+    {% for item in data %}
+    <tr>
+        <td>{{ item.s3_bucket }}</td>
+        <td>{{ item.status }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+</body>
+</html>

@@ -7,9 +7,10 @@ import sys
 
 t = Terminal()
 
+
 def banner():
     daniel_abeles = t.cyan_bold("@Daniel_Abeles")
-    
+
     return f"""
   _____       _                      _____ ____  
  |  __ \     | |                    / ____|___ \ 
@@ -21,6 +22,7 @@ def banner():
         |___/ {daniel_abeles} |___/              
     """
 
+
 def print_result_colored(text, status_code=None):
     if str(status_code).startswith('4'):
         print(t.yellow_bold('[+] ') + t.yellow(text))
@@ -29,8 +31,10 @@ def print_result_colored(text, status_code=None):
     else:
         print(text)
 
+
 def print_started(target, limit):
     print(f'Started scanning {t.magenta_underline(target)} with rate of {t.magenta_underline(str(limit))} ...')
+
 
 def fail_silently(func):
     def handle_keyboard_interrupt():
@@ -58,8 +62,9 @@ def fail_silently(func):
 
     return _wrapper
 
+
 def consume_generator(func):
     def _wrapper(*args, **kwargs):
         return list(func(*args, **kwargs))
-    
+
     return _wrapper
